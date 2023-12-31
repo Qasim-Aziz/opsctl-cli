@@ -1,0 +1,6 @@
+./bin/opsctl api-stress -c 10 -u http://lasaccounting.178.128.141.35.nip.io -e /api/accountBalance/{companyId} -m GET -H "Content-Type:application/json,Authorization:Bearer YourToken" -b '{
+  "status": "string",
+  "message": "string"
+}'
+
+./bin/opsctl api-stress -c 10 -u http://lasaccounting.178.128.141.35.nip.io -e /api/accountBalance/{companyId} -m GET -H "Content-Type:application/json,Authorization:Bearer YourToken" -b '{ "status": "string","message": "string"}' -O output.json -d 12s
